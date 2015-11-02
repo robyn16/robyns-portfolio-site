@@ -1,25 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
 
-
 /*see: http://www.awwwards.com/web-design-awards/werkstatt-wundersite for ref*/
 
-/* scale all images, and media to accomodate responsive layout. */
-img, video, audio, iframe, table, form { 
-  width:100%; /* IE */
-  max-width: 100%; /* FF, Safari, Chrome */
-}
 
-
-/********** Global **********/
-
-
+/* Global Styles */
+/*fonts*/
 h1 { 
   font-family: Montserrat, arial, sans-serif;
   text-transform: uppercase;
   font-size: 0.75em;
   letter-spacing: 2px;
+  line-height: 2em;
   font-weight: 400;
+  color: black;
+  padding-bottom: 10px;
 }
 
 h2 { 
@@ -28,172 +23,130 @@ h2 {
   font-weight: 400;
   line-height: auto;
   color: #333;
+  text-align: left;
 }
 
 h3 { 
   font-family: 'Playfair Display', georgia, serif;
   font-size: 1em;
   font-weight: 400 italic;
+  font-style: italic;
 }
 
-body {
-  background: #fff;
-}
-
-p { /* select all <p> */
-  font-size: 1em; /* ?pt, 100%, 1em */
+h4 { 
+  font-family: 'Playfair Display', georgia, serif;
+  font-size: 2.25em;
+  font-weight: 400;
+  line-height: auto;
+  color: #333;
   line-height: 1.5em;
+  padding-right: 160px;
 }
 
-
-/********** Fixes **********/
-
-* {
-  margin: 0;
-  padding:0;
-  border:0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+p {
+  font-family: 'Playfair Display', georgia, serif;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 400;
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
+.text {
+  padding: 20px 80px;
 }
 
-.clear {
-  clear: both;
+.text-rightcolumn {
+  padding: 20px 50px;
 }
 
-
-/* Columns */
-.wrapper {
-  width: 960px;
-  margin: 0 auto;
+.text-rightlist {
+  padding: 20px 0 0 40px;
 }
 
-.shadow {
-  box-shadow: 0 3px 10px #333;
-}
-
-.logo {
-    float: left;
-    width: 5%;
-    padding: 5px;
-    margin: 4px;
-  }
-
- .social {
-    float: left;
-    width: 2%;
-    padding: 3px;
-    margin: 2px;
-    background-image: "images/social/icon-facebook.png";
- }
-
-.col-1 {
-    float: left;
-    width: 30%;
-    background: #fff;
-    padding: 10px;
-    margin: 10px;
-  }
-
-.col-2 {
-    float: left;
-    width: 10%;
-    padding: 0;
-    margin: 10px;
-  }
-
-[class*="col-"] {
-margin-left: 2%;
-}
-
-.first {
-  margin-left: 0%;
-}
-
-
-
-/* NAVBAR */
-
-#navbar {
+nav {
   font-family: Montserrat, arial, sans-serif;
   text-transform: uppercase;
   font-size: 0.75em;
   letter-spacing: 2px;
   font-weight: 400;
-  width: 100%;
-  position: absolute;
-  top: 2%;
-  left: 2%;
-  text-decoration: none;
-
+  background-color: white !important;
+  border: none !important;
 }
 
-#navbar nav a{
-  display: inline-block;
-  font-size: .80em;
-  width: 12%;
-  padding: 20px 0;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-}
 
-/* Link Hover Color */
-#navbar nav a.selected {
-  font-weight: 700;
-  border-bottom: 3px solid #000 ;
+img, video, audio, iframe, table, form {
+  width: 100%; /* IE */;
+  max-width: 100%; /* FF, Safari, Chrome */
+  float: left;
 }
-
-#navbar a:hover {
-font-weight: 700;
-border-bottom: 3px solid #000;
-}
-
-#background-tone{
-  padding-top: 150px;
-  background-color: #eee;
-}
-/*///////// ICONS ////////////*/
 
 i {
   color: black;
-  padding: 10px;
+  padding-left: 100px;
+  padding-top: 20px;
 }
 
-.center{
-  text-align: center
+i:active,
+i:hover {
+  color: #ff0070 !important;
 }
 
-/*///////// FOOTER ////////////*/
+.col-md-9 {
+  padding-left: 50px;
+}
+
+.float {
+  float: left !important;
+}
+
+a{
+  color: #333 !important;
+}
+
+a:active,
+a:hover {
+  color: #ff0070 !important;
+}
+
+.i-center {
+  text-align: center;
+}
+
+.background{
+  padding: 80px 0 70px 0;
+  background-color: #eee;
+  z-index: 1;
+}
+
+.shadow {
+  box-shadow-bottom: 30px #333 !important;
+  z-index: 5;
+}
+
+img:hover {
+  opacity: 0.1;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+
+
+.works-portfolio{
+  text-align: center;
+  font-style: center;
+  line-height: 0em;
+
+}
+
+.clear {
+  clear:both;
+}
+
+/* Footer Styles */
 
 footer {
-  font-family: Montserrat, arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #555;
-  padding: 10px 0 20px;
-  text-decoration: none;
-
+    width: 100%;
+    height: 160px;
+    font-size: 13px;
+    z-index: 2;
+    clear:both;
 }
-
-  footer a {
-    color: #000;
-    vertical-align: bottom;
-    text-decoration: none;
-  }
-
-
-</div>
-
-
