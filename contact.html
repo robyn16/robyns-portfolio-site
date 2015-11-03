@@ -1,61 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>
-<!-- Insert nav bar here -->
-  <meta charset="utf-8">
-  <link rel="style.css" type="text/css" href="http://fonts.googleapis.com/css?family=Monserrat">
-
-  <title>Portfolio</title>
-
-  <div id="navbar">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="keywords" content="design, graphic, art, director, creative, Parsons, interactive, development, portfolio, communication, 'design thinking', strategy, branding">
+    <meta name="description" content="Robyn Asquini art direction and design portfolio site">
+    <!-- Insert nav bar here -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- social icons -Font awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Portfolio</title>
+  </head>
   
-  <nav class="main-nav" id="navbar">
-    <ul id="navbar">
-      <img src="dev/robyns-portfolio-site/images/robyn-logo.svg/">
-      <li class="portfolio" id="navbar">
-        <a href="portfolio.html">Robyn Asquini</a>
-      <li class="portfolio" id="navbar">
-        <a href="portfolio.html">Portfolio</a>
-      </li>
-      <li class="story" id="navbar">
-        <a href="portfolio.html">Story</a>
-      </li>
-      <li class="journal" id="navbar">
-        <a href="journal.html">Journal</a>
-      <li class="contact" id="navbar">
-        <a href="contact.html">Contact</a>   
-      </li>
-    </ul>
+  <body>
+  <!--/////////// Header //////////-->
+  <div class="container shadow">
 
-  </div> 
+    <div class="row">
+      <div class="col-sm-12">
+          <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="portfolio.html">
+                <img alt="Brand" src="images/robyn-logo.svg">
+              </a>
+            </div>
 
-  <h1>Contact</h1>
-  <h2>Let’s start a conversation. Whether you’re a startup or are an established firm, I’d love to hear about your brand. I’m also open to creative collaborations &amp partnerships.</br> 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="portfolio.html"><strong>Portfolio</strong></a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </nav>
+      </div> <!-- end of 12 column -->
+    </div> <!-- End of Row -->
+  </div><!-- End of Container -->
+ <!--/////////// Ends Header //////////-->
 
+<div class="container-fluid background">
+  <div class="row">
+    <!--/////////// Social Bar //////////-->
+      <div class="col-md-3">
+        <a class="fbook" href="https://facebook.com/robyn-asquini" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></br>
+        <a class="twitt" href="https://twitter.com/RobynDraws" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a> </br>
+        <a class="linkedin" href="https://www.linkedin.com/pub/robyn-asquini/12/29b/87b" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></br>
+        <a class="inst" href="http://instagram.com/rasquini" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a> </br>
+        <a class="pint" href="http://pinterest.com/rasquini" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a> </br>
+        <a class="git" href="#" target="_blank" title="github"><i class="fa fa-github"></i></a> </br>
+      </div>
+    <!--/////////// Ends Social Bar //////////-->
+
+    <!--/////////// HEADING //////////-->
+      <div class="col-md-9">
+        <h1> <span style="letter-spacing: -2px;">------------------</span> Contact</h1>
+        <h4>Let’s start a conversation.</br> Whether you’re a <u><em>startup</em></u> or are an <u><em>established firm</em></u>, I’d love to hear about your brand. I’m also open to creative <u><em>collaborations &amp; partnerships</em></u>.</h4>
+      </div> 
+    </div>
+  </div>
 </head>
 <body>
 
 <!-- Insert contact form here see invision https://projects.invisionapp.com/d/main/#/team/40097828/profile-->
 
    <!-- Contact Form -->
-
-    <form action="#" method="post">
-      <label for="fullname">Name</label>
-      <input type="text" id="fullname" name="fullname" placeholder="Name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Email" required>
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone" name="phone" placeholder="Phone (optional)">
-      <label for="mesage">Message</label>
-      <textarea id="message" name="message" rows="10"></textarea>
-      <input type="submit" value="send">
-    </form>
-
+<div class="container box">
+  <div class="row">
+    <div class="col-md-12">
+      <form action="#" method="post">
+        <label for="fullname">Name</label></br>
+        <input type="text" id="fullname" name="fullname" placeholder="Name" required></br>
+        <label for="email">Email</label></br>
+        <input type="email" id="email" name="email" placeholder="Email" required></br>
+        <label for="phone">Phone</label></br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone (optional)"></br>
+        <label for="mesage">Message</label></br>
+        <textarea id="message" name="message" rows="10"></textarea></br>
+        <input type="submit" value="send"></br>
+      </form>
+    </div>
+  </div>
+</div>
 
 <!-- Insert footer  here -->
 <footer id="footer">
       <div>
-      <img src="dev/robyns-portfolio-site/images/robyn-logo.svg/">
         <ul>
           <li class="portfolio" id="footer">
             <a href="/portfolio/">Portfolio</a>
