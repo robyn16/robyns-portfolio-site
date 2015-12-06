@@ -51,6 +51,14 @@ h5 {
   line-height: 1em;
 }
 
+h6 { 
+  font-family: 'Playfair Display', georgia, serif;
+  font-size: 1.75em;
+  font-weight: 400;
+  line-height: auto;
+  line-height: 1em;
+}
+
 p {
   font-family: 'Playfair Display', georgia, serif;
   font-size: 1em;
@@ -147,10 +155,11 @@ input, textarea {
 
 input[type="submit"] {
   margin-top: 10px;
-  width: 100px;
+  width: 150px;
   background: black;
   color: white;
   border: 0;
+  background-position: left;
 }
 
 input[type="submit"]:hover {
@@ -168,8 +177,15 @@ span.error {
 
 /* end of form */
 
+
+.border-piece {
+  border-left: thin solid #000;
+}
+
 .piece {
   position: relative;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .piece img {
@@ -189,6 +205,10 @@ span.error {
   top: 0;
   z-index: 0;
   text-align: center;
+  padding: 80px 50px;
+  background-color: white;
+  box-shadow: 0 10px 10px #c1c1c1;
+
 }
 
 i {
@@ -249,8 +269,31 @@ a:hover {
   clear:both;
 }
 
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 
-
+@media screen and (max-width: 992px) {
+    .fbook {
+      display: none;
+    }
+    .twitt {
+      display: none;
+    }
+    .linkedin {
+      display: none;
+    }
+    .pint {
+      display: none;
+    }
+    .git {
+      display: none;
+    }
+}
 /* Footer Styles */
 
 footer {
