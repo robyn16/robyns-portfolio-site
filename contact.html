@@ -14,43 +14,37 @@
     <title>Portfolio</title>
   </head>
   
-  <body>
+<body>
   <!--/////////// Header //////////-->
-  <div class="container shadow">
+  <header>
+    <nav class="navbar navbar-default shadow">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img alt="Brand" src="images/robyn-logo.svg">
+          </a>
+        </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-          <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="portfolio.html">
-                <img alt="Brand" src="images/robyn-logo.svg">
-              </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="portfolio.html"><strong>Portfolio</strong></a></li>
-                <li><a href="story.html">Story</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-        </nav>
-      </div> <!-- end of 12 column -->
-    </div> <!-- End of Row -->
-  </div><!-- End of Container -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="story.html"><strong>Story</strong></a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+  </header>
  <!--/////////// Ends Header //////////-->
 
-<div class="container-fluid background">
+<div class="container-fluid background shadow">
   <div class="row">
     <!--/////////// Social Bar //////////-->
       <div class="col-md-3">
@@ -71,53 +65,99 @@
     </div>
   </div>
 </head>
-<body>
-
 <!-- Insert contact form here see invision https://projects.invisionapp.com/d/main/#/team/40097828/profile-->
 
    <!-- Contact Form -->
-<div class="container box">
-  <div class="row">
-    <div class="col-md-12">
-      <form action="#" method="post">
-        <label for="fullname">Name</label></br>
-        <input type="text" id="fullname" name="fullname" placeholder="Name" required></br>
-        <label for="email">Email</label></br>
-        <input type="email" id="email" name="email" placeholder="Email" required></br>
-        <label for="phone">Phone</label></br>
-        <input type="tel" id="phone" name="phone" placeholder="Phone (optional)"></br>
-        <label for="mesage">Message</label></br>
-        <textarea id="message" name="message" rows="10"></textarea></br>
-        <input type="submit" value="send"></br>
-      </form>
+<div style = "background-image: url(images/contact-photo.jpg); background-repeat: no-repeat; z-index: 0; background-size: cover;"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ">
+        <!-- Contact Form -->
+        <form action="#" method="post">
+        <h1> GET IN TOUCH TO REQUEST AN ESTIMATE OR DISCUSS A PROJECT. </h1>
+          <label for="fullname">Name</label>
+          <span id="fullname-error" class="error">must be more than two characters.</span>
+          <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <span id="email-error" class="error">must be a valid email.</span>
+          <input type="text" id="email" name="email" placeholder="Your email" required>
+          
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your phone (optional)">
+          
+          <label for="message">Message</label>
+          <span id="message-error" class="error">Can not be left blank.</span>
+          <textarea id="message" name="message" rows="10" required></textarea>
+          
+          <input type="submit" value="SEND">
+        </form>
+      </section>
+
+    </div><!-- .wrapper -->
+  </div><!-- .white-wood -->
+
+      <!--  <form action="#" method="post">
+          <label for="fullname">Name</label></br>
+          <input type="text" id="fullname" name="fullname" placeholder="Name" required></br>
+          <label for="email">Email</label></br>
+          <input type="email" id="email" name="email" placeholder="Email" required></br>
+          <label for="phone">Phone</label></br>
+          <input type="tel" id="phone" name="phone" placeholder="Phone (optional)"></br>
+          <label for="mesage">Message</label></br>
+          <textarea id="message" name="message" rows="10"></textarea></br>
+          <input type="submit" value="send"></br>
+        </form> -->
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Insert footer  here -->
-<footer id="footer">
-      <div>
-        <ul>
-          <li class="portfolio" id="footer">
-            <a href="/portfolio/">Portfolio</a>
-          </li>
-          <li class="story" id="footer">
-            <a href="/story/">Story</a>
-          </li>
-          <li class="journal" id="footer">
-            <a href="/journal/">Journal</a>
-          <li class="contact" id="footer">
-            <a href="/contact/">Contact</a>   
-          </li>
-        </ul>
-      </div>
+<!--/////////// Foorter //////////-->
+  <footer>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <div class="col-xsm-4">
+            <a class="navbar-brand" href="index.html">
+              <img alt="Brand" src="images/robyn-logo.svg">
+            </a>
+        <!-- Collect the nav links, forms, and other content -->
+         <!--   <div class="col-xsm-7 navbar-center">
+              <a class="fbook" href="https://facebook.com/robyn-asquini" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a>
+              <a class="twitt" href="https://twitter.com/RobynDraws" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
+              <a class="linkedin" href="https://www.linkedin.com/pub/robyn-asquini/12/29b/87b" target="_blank"title="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a class="inst" href="http://instagram.com/rasquini" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a>
+              <a class="pint" href="http://pinterest.com/rasquini" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a>
+              <a class="git" href="#" target="_blank" title="github"><i class="fa fa-github"></i></a>
+            </div>
+          -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="contact.html"><strong>Contact</strong></a></li>
+          </ul>
+          <div class="nav navbar-nav navbar-right">
 
-      <div class="footer">©&nbsp;Robyn Asquini 2015. Site design &amp dev by yours truly.&nbsp;</div>
-      
-<!-- Insert social icons here -->
-        <div id="socialLinks" class="social-links" data-content-field="connected-accounts">
-          <a href="https://twitter.com/RobynDraws" target="_blank" class="social-twitter"></a><a href="http://pinterest.com/rasquini" target="_blank" class="social-pinterest"></a><a href="https://www.linkedin.com/pub/robyn-asquini/12/29b/87b" target="_blank" class="social-linkedin"></a>
+          <div class="clear">
+             <div class="col-sm-12">
+              <p>Designed &amp dev by Robyn Asquini</p>
+            </div>
+            </div>
+          </div>
         </div>
-  </footer>
-</body>
+      </div><!-- /.navbar-header -->
+    </div><!-- /.container-fluid -->
+  </nav>
+    </footer>
+   <!--/////////// Ends footer //////////-->
+
+        
+  <!-- Insert social icons here -->
+          <div id="socialLinks" class="social-links" data-content-field="connected-accounts">
+            <a href="https://twitter.com/RobynDraws" target="_blank" class="social-twitter"></a><a href="http://pinterest.com/rasquini" target="_blank" class="social-pinterest"></a><a href="https://www.linkedin.com/pub/robyn-asquini/12/29b/87b" target="_blank" class="social-linkedin"></a>
+          </div>
+    </footer>
+  </body>
 </html>
