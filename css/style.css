@@ -205,6 +205,11 @@ span.error {
 
 /* end of form */
 
+a.bring-front {
+  display: block;
+  /*position: relative;
+  z-index: 3;*/
+}
 
 .piece {
   position: relative;
@@ -273,7 +278,7 @@ a{
 
 a:active,
 a:hover {
-  color: white;
+  color: gray;
   text-decoration: none;
 }
 
